@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Appium Test Suite" >
+
+    <!-- ✅ Smoke Test Suite -->
+    <test name="Smoke Tests">
+        <parameter name="platformName" value="Android" />
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.LoginPageTest"/>
+        </classes>
+    </test>
+
+    <!-- ✅ Sanity Test Suite -->
+    <test name="Sanity Tests">
+        <parameter name="platformName" value="Android" />
+        <groups>
+            <run>
+                <include name="sanity"/>
+            </run>
+        </groups>
+        <classes>
+
+        </classes>
+    </test>
+
+    <!-- ✅ Regression Test Suite -->
+    <test name="Regression Tests">
+        <parameter name="platformName" value="Android" />
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+<!-- Include your desired test for this suite -->
+        </classes>
+    </test>
+
+</suite>
+
