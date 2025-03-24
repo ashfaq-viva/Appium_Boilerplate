@@ -293,4 +293,4 @@ jobs:
 
       - name: Send Email with Allure Report
         run: |
-          cat summary.txt | mailx -s "Allure Test Report Summary"  test@gmail.com  # replace your valid email
+          cat summary.txt | mailx -s "Allure Test Report Summary"  test@gmail.com  # replace with your valid email
