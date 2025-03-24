@@ -1,24 +1,24 @@
 # MOBILE-AUTOMATION-APPIUM
 
-# This boiler plate includes following key features:
+# This boiler-plate includes following key features:
 
-✅ Platform designed dynamically for both Android and iOS, with dynamic locator handling based on the platform
-✅ Locate locators using pointer and handled dynamically for any device ratio
-✅ Framework using Page Object Model (POM)
-✅ Testing XML setup to run individual test cases or all tests from a single file
-✅ Programmatic Appium server startup
-✅ Common utility methods in BasePage for reusability
-✅ Assertions with SoftAssert support
-✅ Allure Reporting with a runner file to generate and display reports
-✅ Generation allure report with bat file
-✅ Automatic failure screenshots & attachments in Allure reports
-✅ Video recording of test runs & attachments in Allure reports
-✅ TestNG test orders for "Smoke," "Sanity," and "Regression" suites
-✅ Maven Surefire Plugin to support CI/CD execution
-✅ CI/CD pipeline setup using GitHub Actions
-✅ Dependency caching for optimized CI/CD performance
-✅ Email reporting in CI/CD
-✅ Failure screenshots & screen recordings attached in CI/CD reports
+- ✅ Platform designed dynamically for both Android and iOS, with dynamic locator handling based on the platform
+- ✅ Locate locators using pointer and handled dynamically for any device ratio-
+- ✅ Framework using Page Object Model (POM)
+- ✅ Testing XML setup to run individual test cases or all tests from a single file
+- ✅ Programmatic Appium server startup
+- ✅ Common utility methods in BasePage for reusability
+- ✅ Assertions with SoftAssert support
+- ✅ Allure Reporting with a runner file to generate and display reports
+- ✅ Generation allure report with bat file
+- ✅ Automatic failure screenshots & attachments in Allure reports
+- ✅ Video recording of test runs & attachments in Allure reports
+- ✅ TestNG test orders for "Smoke," "Sanity," and "Regression" suites
+- ✅ Maven Surefire Plugin to support CI/CD execution
+- ✅ CI/CD pipeline setup using GitHub Actions
+- ✅ Dependency caching for optimized CI/CD performance
+- ✅ Email reporting in CI/CD
+- ✅ Failure screenshots & screen recordings attached in CI/CD reports
 
 This boilerplate makes mobile automation reusable, efficient, and CI/CD-ready. Feel free to check it out, use it in your projects 🚀
 
