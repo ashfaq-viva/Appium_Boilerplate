@@ -115,3 +115,8 @@ You can run this whole process from run-allure-report.bat file
 
 
 ---
+
+
+### Send email of report in Ci
+
+    instead of test@gmail.com give your email where you want the report to be sent after cicd completion
