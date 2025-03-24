@@ -117,6 +117,8 @@ You can run this whole process from run-allure-report.bat file
 ---
 
 
-### Send email of report in Ci
+### Send email of report in After job completes in CI/CD
 
-    instead of test@gmail.com give your email where you want the report to be sent after cicd completion
+In appium-android-ci.yml file
+
+    Replace "test@gmail.com" with your email where you want the report to be sent after cicd completion
