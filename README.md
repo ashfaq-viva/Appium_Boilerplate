@@ -1,6 +1,27 @@
-# FINDIT-AUTOMATION
-### ui-test-with-java-appium
-This project is done to do UI testing of an android flutter app.
+# MOBILE-AUTOMATION-APPIUM
+
+# This boiler plate includes following key features:
+
+✅ Platform designed dynamically for both Android and iOS, with dynamic locator handling based on the platform
+✅ Locate locators using pointer and handled dynamically for any device ratio
+✅ Framework using Page Object Model (POM)
+✅ Testing XML setup to run individual test cases or all tests from a single file
+✅ Programmatic Appium server startup
+✅ Common utility methods in BasePage for reusability
+✅ Assertions with SoftAssert support
+✅ Allure Reporting with a runner file to generate and display reports
+✅ Generation allure report with bat file
+✅ Automatic failure screenshots & attachments in Allure reports
+✅ Video recording of test runs & attachments in Allure reports
+✅ TestNG test orders for "Smoke," "Sanity," and "Regression" suites
+✅ Maven Surefire Plugin to support CI/CD execution
+✅ CI/CD pipeline setup using GitHub Actions
+✅ Dependency caching for optimized CI/CD performance
+✅ Email reporting in CI/CD
+✅ Failure screenshots & screen recordings attached in CI/CD reports
+
+This boilerplate makes mobile automation reusable, efficient, and CI/CD-ready. Feel free to check it out, use it in your projects 🚀
+
 
 ### Prerequisites and set-up:
 To run the project, you’ll need to ensure following prerequisites as shown below:
@@ -11,6 +32,8 @@ https://docs.google.com/document/d/e/2PACX-1vRnTmwDeynRlYUu9ib-jtkH7Ukas7TWyd0ww
 ---
 
 ### How to run the project and once the above link is understood, here is a short summary to go check
+
+Use Intellij or Aqua 
 
 Step-1: To run the project, execute below command as shown below
 
@@ -32,15 +55,10 @@ The command above will download and install Appium. Once done, verify the Appium
 
 This will return the latest Appium version installed in your system.
 
-To start the Appium server directly from the terminal, enter “appium” as a command.
 
-It will begin on the Appium server on Port number 4723.
-
-Step-2: Start appium server
-
-    1. terminal/cmd/bash -> appium
-    2. you can run individual tests or multiple tests at a time from testng.xml file.
-    3. you can run using groups eg mvn test -Dgroups=sanitySuite
+    1. you can run individual tests or multiple tests at a time from testng.xml file.
+    2. you can run using groups eg mvn test -Dgroups=sanitySuite
+    3.you can run each test from test page
 
 ### How It Works?
 Test script sends a command (e.g., "Tap this button").
@@ -55,11 +73,8 @@ Without the remoteURL, the test framework wouldn't know where the Appium server 
 
 ---
 
-### Features and modules automated so far
+### Example of one module is made
     1. Login
-    2. Logout
-    3. ProductUpload
-    4. and the project is ongoing
 
 
 ---
@@ -96,10 +111,7 @@ Display report using server
 
     allure open ./allure-report/
 
+You can run this whole process from run-allure-report.bat file
+
 
 ---
-
-### Running in docker (future plan)
-    1. terminal/cmd/bash -> docker-compose up
----
-
