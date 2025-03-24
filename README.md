@@ -58,7 +58,7 @@ This will return the latest Appium version installed in your system.
 
     1. you can run individual tests or multiple tests at a time from testng.xml file.
     2. you can run using groups eg mvn test -Dgroups=sanitySuite
-    3.you can run each test from test page
+    3. you can run each test from test page
 
 ### How It Works?
 Test script sends a command (e.g., "Tap this button").
@@ -121,4 +121,4 @@ You can run this whole process from run-allure-report.bat file
 
 In appium-android-ci.yml file
 
-    Replace "test@gmail.com" with your email where you want the report to be sent after cicd completion
+- Replace "test@gmail.com" with your email where you want the report to be sent after cicd completion
