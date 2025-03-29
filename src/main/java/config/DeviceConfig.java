@@ -62,7 +62,7 @@ public class DeviceConfig {
         String apkPath;
         if (System.getenv("GITHUB_ACTIONS") != null) {
             // Running in GitHub Actions
-            apkPath = "/home/runner/work/Findit-App/V1.2.2.apk";
+            apkPath = "/home/runner/work/App/myDemoApp.apk";
         } else {
             // Running locally
             apkPath = System.getProperty("user.dir") + "/" + properties.getProperty("appPath");

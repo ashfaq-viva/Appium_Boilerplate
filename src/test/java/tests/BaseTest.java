@@ -13,15 +13,14 @@ import utils.ScreenRecordingUtils;
 import utils.ScreenshotUtils;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 
 public class BaseTest {
 
     protected WebDriver driver;
     protected LoginPage loginPage;
-    protected String buyerEmail;
-    protected String sellerEmail;
+    protected String email;
+    protected String password;
 
 
     @BeforeMethod(alwaysRun = true)
@@ -31,21 +30,12 @@ public class BaseTest {
         driver = BasePage.driver; // Assign driver to local instance
         this.setCredential();
         this.loginPage = new LoginPage(); // Pass driver instance to page classes
-        startScreenRecording();
-    }
-    private void startScreenRecording() {
-        try {
-            System.out.println("🎥 Starting screen recording via ADB...");
-            Runtime.getRuntime().exec("adb shell screenrecord /sdcard/test_video.mp4");
-            TimeUnit.SECONDS.sleep(2); // Give it some time to start recording
-        } catch (IOException | InterruptedException e) {
-            System.out.println("❌ Failed to start screen recording: " + e.getMessage());
-        }
+        BasePage.startScreenRecording();
     }
 
     public void setCredential() {
-        this.buyerEmail = DeviceConfig.properties.getProperty(Credentials.EMAIL_BUYER.toString());
-        this.sellerEmail = DeviceConfig.properties.getProperty(Credentials.EMAIL_SELLER.toString());
+        this.email = DeviceConfig.properties.getProperty(Credentials.EMAIL.toString());
+        this.password=DeviceConfig.properties.getProperty(Credentials.PASSWORD.toString());
     }
 
     @AfterMethod (alwaysRun = true)

@@ -27,6 +27,7 @@ import java.util.Collections;
 
 import java.lang.reflect.Field;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 public class BasePage {
 
@@ -95,6 +96,16 @@ public class BasePage {
         } catch (NoSuchFieldException | IllegalAccessException e) {
             logger.error("Locator not found: {} in page: {}", locatorFieldName, pageName, e);
             throw new RuntimeException("Locator not found: " + locatorFieldName + " in page: " + pageName, e);
+        }
+    }
+
+    public static void startScreenRecording() {
+        try {
+            System.out.println("🎥 Starting screen recording via ADB...");
+            Runtime.getRuntime().exec("adb shell screenrecord /sdcard/test_video.mp4");
+            TimeUnit.SECONDS.sleep(2); // Give it some time to start recording
+        } catch (IOException | InterruptedException e) {
+            System.out.println("❌ Failed to start screen recording: " + e.getMessage());
         }
     }
 

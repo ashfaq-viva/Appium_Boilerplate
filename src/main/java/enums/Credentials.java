@@ -3,8 +3,8 @@ package enums;
 	public enum Credentials {
 		
 
-	    EMAIL_BUYER("login.emailBuyer"),
-	    EMAIL_SELLER("login.emailSeller");
+	    EMAIL("login.email"),
+		PASSWORD("login.password");
 
 	    private final String type;
 	
