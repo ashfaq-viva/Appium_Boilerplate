@@ -113,6 +113,18 @@ Display report using server
 
 You can run this whole process from run-allure-report.bat file
 
+Appium inspector Capabilities:
+
+    {
+      "appium:deviceName": "sdk_gphone64_x86_64",
+      "appium:platformVersion": "15",
+      "appium:udid": "emulator-5554",
+      "platformName": "Android",
+      "appium:appPackage": "com.saucelabs.mydemoapp.rn",
+      "appium:appActivity": "com.saucelabs.mydemoapp.rn.MainActivity",
+      "appium:automationName": "UiAutomator2",
+      "appium:noreset": true
+    }
 
 ---
 
